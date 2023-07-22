@@ -18,39 +18,39 @@
 
 <body>
     <div class="main-container">
-        <header>
-            <div class="header-nav">
+        <header class="header-logo-menu">
+            <div>
                 <img src="images/logo/Booki@3x.png" alt="Logo Booki">
-                <div class="header-menu">
-                    <div>
-                        <a class="header-menu-item" href="#hebergements">Hébergements</a>
-                    </div>
-                    <div>
-                        <a class="header-menu-item" href="#activites">Activités</a>
-                    </div>
-                </div>  
             </div>
+            <nav>
+                <div class="header-menu-item">
+                    <a href="#hebergements">Hébergements</a>
+                </div>
+                <div class="header-menu-item">
+                    <a href="#activites">Activités</a>
+                </div>
+            </nav>  
         </header>
         <main>
             <section>
                 <h2 class="section-title">Trouvez votre hébergement pour des vacances de rêve</h2>
                 <p>En plein centre-ville ou en pleine nature</p>
-                <form action="#" method="post">
+                <form action="" method="post">
                     <label for="ville">Ville</label>
-                    <input type="text" name="city" id="ville" required>
+                    <input type="text" name="ville" id="ville">
                     <input type="submit" value="Rechercher">
                 </form>
                 <form action="" method="get">
                     <p>
                         Filtres
-                        <input type="checkbox" name="economique" id="cheap">
-                        <label for="cheap">Économique</label>
-                        <input type="checkbox" name="familial" id="family">
-                        <label for="family">Familial</label>
-                        <input type="checkbox" name="romantique" id="romantic">
-                        <label for="romantic">Romantique</label>
-                        <input type="checkbox" name="pepite" id="jewels">
-                        <label for="jewels">Nos pépites</label>
+                        <input type="checkbox" name="economique" id="economique">
+                        <label for="economique">Économique</label>
+                        <input type="checkbox" name="familial" id="familial">
+                        <label for="familial">Familial</label>
+                        <input type="checkbox" name="romantique" id="romantique">
+                        <label for="romantique">Romantique</label>
+                        <input type="checkbox" name="pepite" id="pepite">
+                        <label for="pepite">Nos pépites</label>
                     </p>
                 </form>
                 <p>

@@ -119,48 +119,47 @@ body {
 
 /* Ajouts Christian Georgeot */
 
-.header-nav {
+.header-logo-menu {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     height: 79px;
-
-    background-color: aqua;
 }
 
-.header-nav img {
+.header-logo-menu img {
     width: 61,1px;
     height: 19px;
     padding: 30px 50px;
-
-    background-color: red;
 }
 
-.header-menu {
+.header-logo-menu nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: end;
+    gap: 68px;
     height: 35px;
-    margin: 0 50px;
-
-    background-color: green;
+    padding: 0 50px;
 }
 
-.header-menu a {
+.header-menu-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.header-logo-menu a {
     color: black;
     font-size: 16px;
     text-decoration: none;
-    margin-left: 68px;
-
-    background-color: yellow;
 }
 
 .header-menu-item:hover {
-    color: var(--main-color);
-    border-color: #0065FC;
+    border-color: var(--main-color);
     border-width: 2;
     border-top-style: solid;
+}
+
+.header-menu-item a:hover {
+    color: var(--main-color);
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
