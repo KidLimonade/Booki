@@ -233,7 +233,37 @@ footer {
 }
 
 .search-filter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    height: 50px;
     margin-bottom: 35px;
+}
+
+.search-filter-button {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 0 19px 0 19px;
+    border-radius: 25px;
+    border: 3px solid lightgray;
+}
+
+.search-filter-button-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.search-filter-button-label {
+    font-size: 1,0625em;
+    font-weight: 700;
+}
+
+.search-filter-button:hover {
+    background-color: var(--filter-bg-color);
 }
 
 .search-info {
