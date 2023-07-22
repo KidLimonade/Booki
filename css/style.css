@@ -124,6 +124,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     height: 79px;
+    margin-bottom: 30px;
 }
 
 .header-logo-menu img {
@@ -140,16 +141,16 @@ body {
     padding: 0 50px;
 }
 
+.header-logo-menu a {
+    color: black;
+    font-size: 1em;
+    text-decoration: none;
+}
+
 .header-menu-item {
     display: flex;
     flex-direction: column;
     justify-content: end;
-}
-
-.header-logo-menu a {
-    color: black;
-    font-size: 16px;
-    text-decoration: none;
 }
 
 .header-menu-item:hover {
@@ -160,6 +161,83 @@ body {
 
 .header-menu-item a:hover {
     color: var(--main-color);
+}
+
+main,
+footer {
+    margin: 0 50px;
+}
+
+.info-bar {
+    margin: 0;
+    font-size: 1em;
+}
+
+.footer-link {
+    margin: 0;
+    font-size: 1em;
+    color: black;
+    text-decoration: none;
+}
+
+.search-headline {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 8px;
+    margin-bottom: 35px;
+}
+
+.search-city {
+    margin-bottom: 35px;
+}
+
+.search-field {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.search-city-logo {
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--main-bg-color);
+    border: 1px dotted;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    text-align: center;
+}
+
+.black-logo {
+    color: black;
+}
+
+.search-city-name {
+    font-size: 1.125rem;
+    font-weight: 700;
+    border: none;
+    background-color: white;
+}
+
+.search-city-button {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: white;
+    background-color: var(--main-color);
+    padding: 15px 16px;
+    border: none;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.search-filter {
+    margin-bottom: 35px;
+}
+
+.search-info {
+    margin-bottom: 0;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
