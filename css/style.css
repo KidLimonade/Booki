@@ -274,7 +274,6 @@ footer {
 .infobar {
     height: 24px;
     display: flex;
-    flex-direction: row;
     align-items: center;
     gap: 10px;
     margin-bottom: 0;
@@ -282,12 +281,6 @@ footer {
 
 .infobar-circle {
     color: var(--info-bg-color);
-}
-
-.infobar-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
