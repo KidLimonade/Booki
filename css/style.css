@@ -290,6 +290,19 @@ footer {
     justify-content: center;
 }
 
+.footer-style {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-column {
+    flex: 1;
+    padding: 20px;
+
+    background-color: bisque;
+    border: 1px solid red;
+}
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
