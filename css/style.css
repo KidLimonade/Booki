@@ -79,7 +79,7 @@ body {
 
 .populaires-cards .card {
     display: flex;
-    margin-top: 33px;
+    margin-top: 30px;
 }
 
 .populaires-cards img {
@@ -132,7 +132,7 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 16px;              /* A définir */
-    margin-top: 33px;
+    margin-top: 30px;
 }
 
 .hebergements-cards .card {
@@ -180,6 +180,30 @@ body {
     font-size: 1.125rem;
     font-weight: 700;
     text-decoration: none;
+}
+
+/****** Activités **************/
+
+.activites-cards {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.activites-cards .card {
+    padding: 0;
+}
+
+.activites-cards img {
+    width: 297.5px;
+    height: 380px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.activites-cards .card-title {
+    margin: 20px 0 20px 0;
+    padding: 0 19px 0 19px;
 }
 
 /***************************************/
