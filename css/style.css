@@ -7,7 +7,6 @@
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
-    --info-bg-color: #D9D9D9;
 }
 
 .fa-solid {
@@ -47,7 +46,7 @@ body {
 }
 
 .euro {
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .neutralStar {
@@ -67,11 +66,6 @@ body {
     box-sizing: border-box;
 }
 
-/****** Hebergements ***********/
-.hebergements {
-    width: 65%;
-}
-
 /****** Populaires ***********/
 .populaires {
     width: 32%;
@@ -85,7 +79,7 @@ body {
 
 .populaires-cards .card {
     display: flex;
-    margin-top: 33px;
+    margin-top: 30px;
 }
 
 .populaires-cards img {
@@ -118,6 +112,132 @@ body {
 }
 
 /* Ajouts Christian Georgeot */
+
+/****** Hebergements ***********/
+
+.hebergements {
+    width: 65%;
+}
+
+/* Inutile en l'absence d'icone
+.hebergements-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+*/
+
+.hebergements-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;              /* A définir */
+    margin-top: 30px;
+}
+
+.hebergements-cards .card {
+    flex: 1 1 30%;
+    height: 207,25px;       /* A définir */
+    display: flex;
+    flex-direction: column;
+  }
+
+.hebergements-cards img {
+    width: 100%;
+    height: 124px;          /* A définir */
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px; 
+}
+
+.hebergements-cards .card-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+    padding-left: 15px;     /* A definir */
+}
+
+/* Inutilisé pour l'instant
+.hebergements-cards .card-txt {
+}
+*/
+
+.hebergements-cards .card-title {
+    font-size: 1em;         /* A definir */
+}
+
+.hebergements-cards .card-subtitle {
+    font-size: 0.875em;
+}
+
+.hebergements-all,
+.hebergements-all a:link,
+.hebergements-all a:visited,
+.hebergements-all a:hover,
+.hebergements-all a:active {
+    color: black;
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+/****** Activités **************/
+
+.activites-cards {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.activites-cards .card {
+    padding: 0;
+}
+
+.activites-cards img {
+    width: 297.5px;
+    height: 380px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.activites-cards .card-title {
+    margin: 20px 0 20px 0;
+    padding: 0 19px 0 19px;
+}
+
+/****** Footer *****************/
+
+.footer-columns {
+    display: flex;
+}
+
+.column-list {
+    flex: 1;
+    padding: 20px;
+}
+
+.column-list .column-title {
+    margin: 0;
+}
+
+.column-list ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.column-list li {
+    margin-top: 15px;
+}
+
+.column-list a {
+    font-size: 1em;
+    color: black;
+    text-decoration: none;
+}
+
+/***************************************/
 
 .header-logo-menu {
     display: flex;
@@ -270,33 +390,6 @@ footer {
     color: var(--info-bg-color);
 }
 
-.infobar-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.footer-style {
-    display: flex;
-}
-
-.footer-column {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    padding: 20px;
-}
-
-.footer-title {
-    margin: 0;
-}
-
-.footer-link {
-    color: black;
-    text-decoration: none;
-}
-
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
@@ -305,30 +398,30 @@ footer {
     .hebergements-and-populaires {
         flex-direction: column;
     }
-    
+
     .hebergements {
         width: 100%;
     }
-    
+
     .populaires {
         width: 100%;
         margin-top: 50px;
     }
-    
+
     .populaires-cards {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
-    
+
     .populaires-cards .card {
         width: 30%;
     }
-    
+
     .populaires-cards .card-title {
         font-size: 14px;
     }
-    
+
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
