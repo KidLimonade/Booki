@@ -114,45 +114,72 @@ body {
 /* Ajouts Christian Georgeot */
 
 /****** Hebergements ***********/
+
 .hebergements {
     width: 65%;
 }
+
+/* Inutile en l'absence d'icone
+.hebergements-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+*/
 
 .hebergements-cards {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 16px;              /* A définir */
     margin-top: 33px;
-
-    background-color: red;
 }
 
 .hebergements-cards .card {
-    flex: 0.32;
-}
+    flex: 1 1 30%;
+    height: 207,25px;       /* A définir */
+    display: flex;
+    flex-direction: column;
+  }
 
 .hebergements-cards img {
-    width: 100%;                        /* Logique */
-    height: 104px;                      /* Pour coller à Figma */
-    border-top-left-radius: 20px;       /* OK */
-    border-top-right-radius: 20px;      /* OK */
+    width: 100%;
+    height: 124px;          /* A définir */
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px; 
 }
 
 .hebergements-cards .card-content {
-    padding-left: 15px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+    padding-left: 15px;     /* A definir */
 }
 
+/* Inutilisé pour l'instant
+.hebergements-cards .card-txt {
+}
+*/
+
 .hebergements-cards .card-title {
-    margin: 4px 0 0 0;
+    font-size: 1em;         /* A definir */
 }
 
 .hebergements-cards .card-subtitle {
     font-size: 0.875em;
-    margin: 8px 0 0 0;
 }
 
-.hebergements-cards .card-rating {
-    margin: 4px 0 0 0;
+.hebergements-all,
+.hebergements-all a:link,
+.hebergements-all a:visited,
+.hebergements-all a:hover,
+.hebergements-all a:active {
+    color: black;
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-decoration: none;
 }
 
 /***************************************/
