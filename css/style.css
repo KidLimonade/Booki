@@ -30,6 +30,7 @@ body {
 .main-container {
     width: 100%;
     max-width: 1440px;
+    /*min-width: 1024px;            Remove comment: ToDo avant tests finaux */
     padding: 0 50px;
     box-sizing: border-box;
 }
@@ -141,7 +142,7 @@ body {
     gap: 68px;
 }
 
-.header-navbar-item {
+.header-navbar-link {
     height: 35px;
     display: flex;
     flex-direction: column;
@@ -151,7 +152,7 @@ body {
     text-decoration: none;
 }
 
-.header-navbar-item:hover {
+.header-navbar-link:hover {
     border-top: 2px solid  var(--main-color);
     color: var(--main-color);
 }
