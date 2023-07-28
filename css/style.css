@@ -71,6 +71,7 @@ body {
 .hebergements-and-populaires section {
     background-color: var(--main-bg-color);
     border-radius: 20px;
+    margin-top: 35px;
     padding: 30px;
     box-sizing: border-box;
 }
@@ -122,19 +123,56 @@ body {
 
 /* Ajouts Christian Georgeot */
 
+/****** header *****************/
+
+.header-logo-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 79px;
+    margin-bottom: 30px;
+}
+
+.header-logo-menu img {
+    width: 61,1px;
+    height: 19px;
+    padding: 30px 50px 30px 0;
+}
+
+.header-logo-menu nav {
+    display: flex;
+    flex-direction: row;
+    gap: 68px;
+    height: 35px;
+}
+
+.header-logo-menu a {
+    color: black;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+.header-menu-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.header-menu-item:hover {
+    border-color: var(--main-color);
+    border-width: 2;
+    border-top-style: solid;
+}
+
+.header-menu-item a:hover {
+    color: var(--main-color);
+}
+
 /****** Hebergements ***********/
 
 .hebergements {
     width: 65%;
 }
-
-/* Inutile en l'absence d'icone
-.hebergements-title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;  
-}
-*/
 
 .hebergements-cards {
     display: flex;
@@ -167,17 +205,16 @@ body {
     padding-left: 15px;     /* A definir */
 }
 
-/* Inutilisé pour l'instant
-.hebergements-cards .card-txt {
-}
-*/
-
 .hebergements-cards .card-title {
     font-size: 1em;         /* A definir */
 }
 
 .hebergements-cards .card-subtitle {
     font-size: 0.875em;
+}
+
+.hebergements-all {
+    margin-top: 35px;
 }
 
 .hebergements-all,
@@ -192,6 +229,12 @@ body {
 }
 
 /****** Activités **************/
+
+.activites {
+    margin-top: 35px;
+    padding: 30px;
+    box-sizing: border-box;
+}
 
 .activites-cards {
     display: flex;
@@ -220,6 +263,7 @@ body {
 .footer-columns {
     display: flex;
     background-color: var(--main-bg-color);
+    margin-top: 35px;
 }
 
 .column-list {
@@ -250,55 +294,6 @@ body {
 }
 
 /***************************************/
-
-.header-logo-menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 79px;
-    margin-bottom: 30px;
-}
-
-.header-logo-menu img {
-    width: 61,1px;
-    height: 19px;
-    padding: 30px 50px;
-}
-
-.header-logo-menu nav {
-    display: flex;
-    flex-direction: row;
-    gap: 68px;
-    height: 35px;
-    padding: 0 50px;
-}
-
-.header-logo-menu a {
-    color: black;
-    font-size: 1em;
-    text-decoration: none;
-}
-
-.header-menu-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-}
-
-.header-menu-item:hover {
-    border-color: var(--main-color);
-    border-width: 2;
-    border-top-style: solid;
-}
-
-.header-menu-item a:hover {
-    color: var(--main-color);
-}
-
-main,
-footer {
-    margin: 0 50px;
-}
 
 .info-bar {
     margin: 0;
