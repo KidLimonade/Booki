@@ -124,14 +124,14 @@ body {
 
 /* Ajouts Christian Georgeot */
 
+.head-subtitle {
+    margin: 0;
+}
+
 .list-title {
     margin: 0;
     font-size: 1.125em;
     font-weight: 700;
-}
-
-.head-subtitle {
-    margin: 0;
 }
 
 /****** header *****************/
@@ -170,17 +170,18 @@ body {
 
 /****** Recherche **************/
 
+/*----- Filter ----------------*/
+
 .search-head {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     gap: 8px;
     margin-top: 30px;
-    margin-bottom: 35px;
 }
 
 .search-city {
-    margin-bottom: 35px;
+    /* Ici je voudrais la height */
+    margin-top: 35px;
 }
 
 .search-city-logo {
@@ -220,51 +221,47 @@ body {
     border-bottom-right-radius: 15px;
 }
 
+/*----- Filter ----------------*/
+
 .search-filter {
     display: flex;
-    flex-direction: row;
     align-items: center;
     gap: 15px;
+    box-sizing: border-box;
+    margin-top: 35px;
+}
+
+.filter-button {
     height: 50px;
-    margin-bottom: 35px;
-}
-
-.search-filter-button {
     display: flex;
-    flex-direction: row;
     gap: 10px;
-    padding: 0 19px 0 19px;
+    align-items: center;
+    padding: 0 19px;
     border-radius: 25px;
-    border: 2px solid;
-    border-color: var(--second-bg-color);
+    border: 2px solid  var(--second-bg-color);
 }
 
-.search-filter-button-icon {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.search-filter-button-label {
-    font-size: 1.0625em;
-    font-weight: 700;
-}
-
-.search-filter-button:hover {
+.filter-button:hover {
     background-color: var(--filter-bg-color);
 }
 
-/****** infobar ***********/
+.button-label {
+    font-size: 1.0625em;
+    font-weight: 700;
+    white-space: nowrap;
+}
 
-.infobar {
+/*----- Info ------------------*/
+
+.search-infobar {
     height: 24px;
     display: flex;
     align-items: center;
     gap: 10px;
-    margin: 0;
+    margin-top: 35px;
 }
 
-.infobar-circle {
+.search-infobar .fa-circle {
     color: var(--second-bg-color);
 }
 
