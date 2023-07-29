@@ -170,7 +170,7 @@ body {
 
 /****** Recherche **************/
 
-/*----- Filter ----------------*/
+/*----- Head ------------------*/
 
 .search-head {
     display: flex;
@@ -179,12 +179,16 @@ body {
     margin-top: 30px;
 }
 
-.search-city {
-    /* Ici je voudrais la height */
+/*----- City ------------------*/
+
+.search-form {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
     margin-top: 35px;
 }
 
-.search-city-logo {
+.location-icon {
     width: 50px;
     display: flex;
     flex-direction: column;
@@ -196,13 +200,7 @@ body {
     text-align: center;
 }
 
-.search-field {
-    display: flex;
-    flex-direction: row;
-    gap: 24px;
-}
-
-.search-city-name {
+.city-field {
     font-size: 1.125rem;
     font-weight: 700;
     border: 1px solid;
@@ -210,7 +208,7 @@ body {
     background-color: white;
 }
 
-.search-city-button {
+.search-button {
     font-size: 1.125rem;
     font-weight: 700;
     color: white;
