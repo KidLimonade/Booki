@@ -49,7 +49,7 @@ body {
     font-weight: 700;
 }
 
-.neutralStar {
+.neutral-star {
     color: var(--main-bg-color)
 }
 
@@ -289,12 +289,12 @@ body {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 30px;
+    /*gap: 30px;*/
 }
 
 .hebergements-cards .card {
-    flex: 0 1 30%;                  /* A régler */
-    height: 195px;                  /* A régler */
+    flex: 0 1 30%; 
+    height: 192px;
     display: flex;
     flex-direction: column;
     margin-top: 30px;
@@ -302,13 +302,13 @@ body {
 
 .hebergements-cards img {
     width: 100%;
-    height: 110px;                  /* A régler */
+    height: 110px; 
     border-radius: 20px 20px 0 0;
 }
 
 .hebergements-cards .card-content {
     height: 100%;
-    padding-left: 15px;             /* A régler */
+    margin: 0 15px 0 15px; 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -324,11 +324,11 @@ body {
 }
 
 .hebergements-cards .card-rating {
-    margin: 0 0 0 0;                /* A régler */
+    margin: 0 0 2px 0;
 }
 
 .hebergements-all {
-    margin-top: 35px;
+    margin-top: 30px;
 }
 
 .hebergements-all-button {
