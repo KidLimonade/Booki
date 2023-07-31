@@ -146,6 +146,11 @@ body {
     font-weight: 700;
 }
 
+.activites-cards .card:hover,
+.hebergements-cards .card:hover {
+    filter: drop-shadow(0px 5px 22px rgba(0, 0, 0, 0.15));
+}
+
 /****** header *****************/
 
 .header-logo-navbar {
