@@ -130,10 +130,6 @@ body {
     font-weight: 600;
 }
 
-.head-subtitle {
-    margin: 0;
-}
-
 /*  Uncomment: ToDo before final testing
 .main-container {
     min-width: 1024px;           
@@ -155,8 +151,8 @@ body {
 }
 
 .header-logo img {
+    margin-top: 30px;
     height: 19px;
-    padding: 30px 0;
 }
 
 .header-navbar {
@@ -169,8 +165,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: end;
-    box-sizing: border-box;
-    
+    box-sizing: border-box;    
     color: black;
     text-decoration: none;
 }
@@ -180,76 +175,82 @@ body {
     color: var(--main-color);
 }
 
-/****** Recherche **************/
+/****** search *****************/
 
-/*----- Head ------------------*/
+/*----- head ------------------*/
 
 .search-head {
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
     gap: 8px;
-    margin-top: 30px;
+}
+
+.head-subtitle {
+    margin: 0;
 }
 
 /*----- City ------------------*/
 
-.search-form {
+.search-city {
+    margin-top: 35px;
     display: flex;
     align-items: center;
-    margin-top: 35px;
 }
 
-.location-icon {
-    width: 50px;
+.search-city .pin-icon,
+.search-city .text-field,
+.search-city .search-button {
     height: 49px;
-    text-align: center;
+    font-size: 1.125rem;
+    font-weight: 700;
+    box-sizing: content-box;
+}
+
+.search-city .pin-icon {
+    width: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
     background-color: var(--main-bg-color);
+    border: 1px solid var(--main-bg-color);
     border-radius: 15px 0 0 15px;
-  }
-  
-.city-field {
-    height: 49px;
-    padding: 0 24px;  
-    font-size: 1.125rem;
-    font-weight: 700;
-    border-left: none;
-    border-right: none;
-    border-top: 1px solid;
-    border-bottom: 1px solid;
-    box-sizing: border-box;
-    border-color: var(--main-bg-color);
-    background-color: white;
 }
 
-.search-button {
-    height: 49px;
+.search-city .text-field {
+    padding: 0 24px;  
+    background-color: white;
+    border-top: 1px solid var(--main-bg-color);
+    border-right: none;
+    border-bottom: 1px solid var(--main-bg-color);
+    border-left: none;
+}
+
+.search-city .search-button {
     padding: 0 16px;
-    font-size: 1.125rem;
-    font-weight: 700;
-    border: none;
-    border-radius: 0 15px 15px 0;
     color: white;
     background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+    border-radius: 0 15px 15px 0;
 }
 
 /*----- Filter ----------------*/
 
 .search-filter {
+    margin-top: 35px;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 15px;
     box-sizing: border-box;
-    margin-top: 35px;
 }
 
 .filter-button {
     height: 50px;
     display: flex;
-    gap: 10px;
     align-items: center;
+    gap: 10px;
     padding: 0 19px;
     border-radius: 25px;
     border: 2px solid  var(--second-bg-color);
@@ -268,11 +269,11 @@ body {
 /*----- Info ------------------*/
 
 .search-infobar {
+    margin-top: 35px;
     height: 24px;
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-top: 35px;
 }
 
 .search-infobar .fa-circle {
@@ -373,27 +374,27 @@ body {
 
 /****** Footer *****************/
 
-.footer-columns {
+.footer-helper {
+    margin-top: 35px;
     display: flex;
     background-color: var(--main-bg-color);
-    margin-top: 35px;
 }
 
-.column-list {
+.helper-theme {
     flex: 1;
-    padding: 20px;
+    margin: 20px;
 }
 
-.column-list ul {
+.helper-theme ul {
     padding: 0;
     list-style-type: none;
 }
 
-.column-list li {
+.helper-theme li {
     margin-top: 15px;
 }
 
-.column-list a {
+.helper-theme a {
     color: black;
     text-decoration: none;
 }
@@ -406,30 +407,30 @@ body {
     .hebergements-and-populaires {
         flex-direction: column;
     }
-
+    
     .hebergements {
         width: 100%;
     }
-
+    
     .populaires {
         width: 100%;
         margin-top: 50px;
     }
-
+    
     .populaires-cards {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
-
+    
     .populaires-cards .card {
         width: 30%;
     }
-
+    
     .populaires-cards .card-title {
         font-size: 14px;
     }
-
+    
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
