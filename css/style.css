@@ -130,10 +130,6 @@ body {
     font-weight: 600;
 }
 
-.head-subtitle {
-    margin: 0;
-}
-
 /*  Uncomment: ToDo before final testing
 .main-container {
     min-width: 1024px;           
@@ -155,8 +151,8 @@ body {
 }
 
 .header-logo img {
+    margin-top: 30px;
     height: 19px;
-    padding: 30px 0;
 }
 
 .header-navbar {
@@ -169,8 +165,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: end;
-    box-sizing: border-box;
-    
+    box-sizing: border-box;    
     color: black;
     text-decoration: none;
 }
@@ -180,59 +175,64 @@ body {
     color: var(--main-color);
 }
 
-/****** Recherche **************/
+/****** search *****************/
 
-/*----- Head ------------------*/
+/*----- head ------------------*/
 
 .search-head {
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
     gap: 8px;
-    margin-top: 30px;
+}
+
+.head-subtitle {
+    margin: 0;
 }
 
 /*----- City ------------------*/
 
-.search-form {
+.search-city {
+    margin-top: 35px;
     display: flex;
     align-items: center;
-    margin-top: 35px;
 }
 
-.location-icon {
-    width: 50px;
+.search-city .pin-icon,
+.search-city .text-field,
+.search-city .search-button {
     height: 49px;
-    text-align: center;
+    font-size: 1.125rem;
+    font-weight: 700;
+    box-sizing: content-box;
+}
+
+.search-city .pin-icon {
+    width: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
     background-color: var(--main-bg-color);
+    border: 1px solid var(--main-bg-color);
     border-radius: 15px 0 0 15px;
   }
   
-.city-field {
-    height: 49px;
+  .search-city .text-field {
     padding: 0 24px;  
-    font-size: 1.125rem;
-    font-weight: 700;
-    border-left: none;
-    border-right: none;
-    border-top: 1px solid;
-    border-bottom: 1px solid;
-    box-sizing: border-box;
-    border-color: var(--main-bg-color);
     background-color: white;
+    border-top: 1px solid var(--main-bg-color);
+    border-right: none;
+    border-bottom: 1px solid var(--main-bg-color);
+    border-left: none;
 }
 
-.search-button {
-    height: 49px;
+.search-city .search-button {
     padding: 0 16px;
-    font-size: 1.125rem;
-    font-weight: 700;
-    border: none;
-    border-radius: 0 15px 15px 0;
     color: white;
     background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+    border-radius: 0 15px 15px 0;
 }
 
 /*----- Filter ----------------*/
