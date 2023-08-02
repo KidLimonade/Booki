@@ -327,20 +327,20 @@ body {
     margin: 0 0 2px 0;
 }
 
-.hebergements-all {
+.hebergements-more {
     margin-top: 30px;
 }
 
-.hebergements-all-button {
+.hebergements-more .button {
     color: black;
-    font-size: 1.125rem;
+    font-size: 1.125em;
     font-weight: 700;
     text-decoration: none;
 }
 
 /****** Activités **************/
 
-.activites {
+#activites {
     margin-top: 35px;
     padding: 30px;
 }
