@@ -286,16 +286,10 @@ body {
 
 /****** Hebergements ***********/
 
-
 .hebergements-cards {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-}
-
-.clickable-card {
-    color: black;
-    text-decoration: none;
 }
 
 .hebergements-cards .card {
@@ -354,7 +348,7 @@ body {
 
 /****** Activités **************/
 
-#activites {
+.activites {
     margin-top: 35px;
     padding: 30px;
 }
