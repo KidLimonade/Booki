@@ -246,18 +246,15 @@ body {
 
 .filterbar .button {
   height: 50px;
+  padding: 0 19px;
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 0 19px;
-  border-radius: 25px;
-  border: 2px solid  var(--second-bg-color);
-}
-
-.filterbar .button-label {
   font-size: 1.0625em;
   font-weight: 700;
   white-space: nowrap;
+  border: 2px solid  var(--second-bg-color);
+  border-radius: 25px;
 }
 
 .filterbar .button:hover {
