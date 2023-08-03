@@ -8,44 +8,37 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/ba2dbfd721.js" crossorigin="anonymous"></script>
     <!-- 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    -->
+    -->    <script src="https://kit.fontawesome.com/ba2dbfd721.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <div class="main-container">
         <header>
-            <div class="header-logo-navbar">
-                <div class="header-logo">
-                    <img src="images/logo/Booki@3x.png" alt="Logo bleu Booki">
-                </div>
-                <nav class="header-navbar">
-                    <div>
-                        <a href="#hebergements">Hébergements</a>
-                    </div>
-                    <div>
-                        <a href="#activites">Activités</a>
-                    </div>
+            <div class="topnav">
+                <img src="images/logo/Booki@3x.png" alt="Logo bleu Booki">
+                <nav class="navbar">
+                    <div><a href="#hebergements" class="std-button">Hébergements</a></div>
+                    <div><a href="#activites" class="std-button">Activités</a></div>
                 </nav>
             </div>
         </header>
         <main>
             <section>
-                <div class="search-head">
+                <div class="headline">
                     <h1 class="section-title">Trouvez votre hébergement pour des vacances de rêve</h1>
                     <p class="subtitle">En plein centre-ville ou en pleine nature</p>
                 </div>
-                <form action="#" method="get" class="search-city" >
-                    <label for="ville" class="pin-icon">
-                        <i class="fa-solid fa-location-dot fa-lg icon"></i>
+                <form action="#" method="get" class="searchbar">
+                    <label for="ville" class="icon">
+                        <i class="fa-solid fa-location-dot fa-lg"></i>
                     </label>
-                    <input type="text" name="city" id="ville" size="12" value="Marseille, France" placeholder="Ou allons-nous ?" class="field">
+                    <input type="text" name="city" id="ville" size="14" value="Marseille, France" placeholder="ex. Bordeaux" class="field">
                     <input type="submit" value="Rechercher" class="button">
                 </form>
-                <div class="search-filter">
+                <div class="filterbar">
                     <p class="list-title">Filtres</p>
                     <div class="button">
                         <i class="fa-solid fa-money-bill-wave fa-lg"></i>
@@ -64,7 +57,7 @@
                         <p class="button-label">Nos pépites</p>
                     </div>
                 </div>
-                <div class="search-infobar">
+                <div class="infobar">
                     <div class="fa-xs fa-stack">
                         <i class="fa-regular fa-circle fa-stack-2x"></i>
                         <i class="fa-solid fa-info fa-stack-1x"></i>
@@ -79,7 +72,7 @@
                     </h2>
                     <div class="hebergements-cards">
                         <article class="card clickable-card">
-                            <a href="#">
+                            <a href="#" class="std-button">
                                 <div>
                                     <img src="./images/hebergements/fred-kleber.jpg" alt="Chambre à 2 lits très lumineuse">
                                 </div>
@@ -93,14 +86,14 @@
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
-                                        <span class="sr-only">Note de 4 sur 5</span>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <span class="sr-only">Note de 5 sur 5</span>
                                     </div>
                                 </div>
                             </a>
                         </article>
                         <article class="card clickable-card">
-                            <a href="#">
+                            <a href="#" class="std-button">
                                 <div>
                                     <img src="./images/hebergements/febrian-zakaria.jpg" alt="Chambre à 2 lits lumineuse avec petit bureau">
                                 </div>
@@ -121,7 +114,7 @@
                             </a>
                         </article>
                         <article class="card clickable-card">
-                            <a href="#">
+                            <a href="#" class="std-button">
                                 <div>
                                     <img src="./images/hebergements/reisetopia.jpg" alt="Chambre avec lit double et grand dressing">
                                 </div>
@@ -142,7 +135,7 @@
                             </a>
                         </article>
                         <article class="card clickable-card">
-                            <a href="#">
+                            <a href="#" class="std-button">
                                 <div>
                                     <img src="./images/hebergements/annie-spratt.jpg" alt="Chambre à lit double au style provencal et aux tons bleu">
                                 </div>
@@ -163,7 +156,7 @@
                             </a>
                         </article>
                         <article class="card clickable-card">
-                            <a href="#">
+                            <a href="#" class="std-button">
                                 <div>
                                     <img src="./images/hebergements/marcus-loke.jpg" alt="Petite chambre avec lits superposés">
                                 </div>
@@ -176,15 +169,15 @@
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
-                                        <span class="sr-only">Note de 4 sur 5</span>
+                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                        <span class="sr-only">Note de 3 sur 5</span>
                                     </div>
                                 </div>
                             </a>
                         </article>
                         <article class="card clickable-card">
-                            <a href="#">
+                            <a href="#" class="std-button">
                                 <div>
                                     <img src="./images/hebergements/nicate-lee.jpg" alt="Dortoir avec lits superposés avec rideaux individuels">
                                 </div>
@@ -206,7 +199,7 @@
                         </article>
                     </div>
                     <div class="hebergements-more">
-                        <a href="#">Afficher plus </a>
+                        <a href="#" class="std-button">Afficher plus</a>
                     </div>
                 </section> <!-- hebergements -->
                 <section class="populaires">
@@ -275,7 +268,7 @@
                 </h2>
                 <div class="activites-cards">
                     <article class="card clickable-card">
-                        <a href="#">
+                        <a href="#" class="std-button">
                             <div>
                                 <img src="images/activites/reno-laithienne.jpg" alt="Nombreux bateaux amarrés sur les quais du Vieux-Port">
                             </div>
@@ -283,7 +276,7 @@
                         </a>
                     </article>
                     <article class="card clickable-card">
-                        <a href="#">
+                        <a href="#" class="std-button">
                             <div>
                                 <img src="images/activites/paul-hermann.jpg" alt="Le Fort de Pomègues au sommet d'une île de l'archipel du Frioul">
                             </div>
@@ -291,7 +284,7 @@
                         </a>
                     </article>
                     <article class="card clickable-card">
-                        <a href="#">
+                        <a href="#" class="std-button">
                             <div>
                                 <img src="images/activites//kilyan-sockalingum.jpg" alt="Vue sur la Méditerrannée depuis les hauteurs du Parc national des Calanques">
                             </div>
@@ -299,7 +292,7 @@
                         </a>
                     </article>
                     <article class="card clickable-card">
-                        <a href="#">
+                        <a href="#" class="std-button">
                             <div>
                                 <img src="images/activites/florian-wehde.jpg" alt="Notre-Dame-de-la-Garde surplombant la vielle vile de Marseille">
                             </div>
@@ -314,23 +307,23 @@
                 <div class="theme">
                     <p class="list-title">À propos</p>
                     <ul>
-                        <li><a href="#">Fonctionnement du site</a></li>
-                        <li><a href="#">Conditions générales</a></li>
-                        <li><a href="#">Données et confidentialité</a></li>
+                        <li><a href="#" class="std-button">Fonctionnement du site</a></li>
+                        <li><a href="#" class="std-button">Conditions générales</a></li>
+                        <li><a href="#" class="std-button">Données et confidentialité</a></li>
                     </ul>
                 </div>
                 <div class="theme">
                     <p class="list-title">Nos hébergements</p>
                     <ul>
-                        <li><a href="#">Charte qualité</a></li>
-                        <li><a href="#">Proposer votre hôtel</a></li>
+                        <li><a href="#" class="std-button">Charte qualité</a></li>
+                        <li><a href="#" class="std-button">Proposer votre hôtel</a></li>
                     </ul>
                 </div>
                 <div class="theme">
                     <p class="list-title">Assistance</p>
                     <ul>
-                        <li><a href="#">Centre d’aide</a></li>
-                        <li><a href="#">Nous contacter</a></li>
+                        <li><a href="#" class="std-button">Centre d’aide</a></li>
+                        <li><a href="#" class="std-button">Nous contacter</a></li>
                     </ul>
                 </div>
             </div>
