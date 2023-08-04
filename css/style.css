@@ -84,7 +84,7 @@ body {
 
 .populaires-cards .card {
   display: flex;
-  margin-top: 30px;           /* CG: pour cohérence Figma */
+  margin-top: 30px; /* Modified from 33px to 30px */
 }
 
 .populaires-cards img {
@@ -120,6 +120,11 @@ body {
 
 /****** General ****************/
 
+/*
+  Modifications according to Figma mockup
+  To be verified with Sarah and Loïc
+*/
+
 :root {
   --second-bg-color: #D9D9D9;
 }
@@ -128,13 +133,27 @@ body {
   font-weight: 600;
 }
 
+/* Modified in original source code 
+.populaires-cards .card {
+  margin-top: 30px; 
+}
+*/
+
+/*
+  General modifications
+*/
+
 .main-container {
   min-width: 1025px;
 }
 
+/*
+  Common
+*/
+
 .navigation-bar a,
 .clickable-card a,
-.hebergements-showmore a,
+.showmore-button a,
 .button-list a {
   color: black;
   text-decoration: none;
@@ -188,7 +207,7 @@ body {
   gap: 8px;
 }
 
-.search-city .headline .subtitle {
+.headline .subtitle {
   margin: 0;
 }
 
@@ -200,26 +219,26 @@ body {
   align-items: center;
 }
 
-.search-city .searchbar .icon {
+.searchbar .icon {
   padding: 15px 18px;
   background-color: var(--main-bg-color);
   border: 1px solid var(--main-bg-color);
   border-radius: 15px 0 0 15px;
 }
 
-.search-city .searchbar .icon i {
+.searchbar .icon i {
   color: black;
 }
 
-.search-city .searchbar .field,
-.search-city .searchbar .button {
+.searchbar .field,
+.searchbar .button {
   height: 49px;
   font-size: 1.125rem;
   font-weight: 700;
   box-sizing: content-box;
 }
 
-.search-city .searchbar .field {
+.searchbar .field {
   padding: 0 24px;  
   background-color: white;
   border-top: 1px solid var(--main-bg-color);
@@ -228,7 +247,7 @@ body {
   border-left: none;
 }
 
-.search-city .searchbar .button {
+.searchbar .button {
   padding: 0 16px;
   color: white;
   background-color: var(--main-color);
@@ -246,20 +265,20 @@ body {
   flex-wrap: wrap;
 }
 
-.search-city .filterbar .button {
+.filterbar .button {
   height: 50px;
   padding: 0 19px;
   font-size: 1.0625em;
   font-weight: 700;
+  white-space: nowrap;
   display: flex;
   align-items: center;
   gap: 10px;
-  white-space: nowrap;
   border: 2px solid  var(--second-bg-color);
   border-radius: 25px;
 }
 
-.search-city .filterbar .button:hover {
+.filterbar .button:hover {
   background-color: var(--filter-bg-color);
 }
 
@@ -273,7 +292,7 @@ body {
   gap: 10px;
 }
 
-.search-city .infobar .fa-circle {
+.infobar .fa-circle {
   color: var(--second-bg-color);
 }
 
@@ -324,11 +343,11 @@ body {
 
 /*----- More ------------------*/
 
-.hebergements-showmore {
+.showmore-button {
   margin-top: 30px;
 }
 
-.hebergements-showmore a {
+.showmore-button a {
   font-size: 1.125em;
   font-weight: 700;
 }
