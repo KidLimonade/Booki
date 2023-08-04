@@ -132,9 +132,10 @@ body {
   min-width: 1025px;
 }
 
+.navigation-bar a,
 .clickable-card a,
-.list-buttons a,
-.std-button {
+.hebergements-showmore a,
+.button-list a {
   color: black;
   text-decoration: none;
 }
@@ -147,23 +148,23 @@ body {
 
 /****** header *****************/
 
-.topnav {
+.header-navigation {
   height: 79px;
   display: flex;
   justify-content: space-between;
 }
 
-.topnav img {
+.header-navigation img {
   margin-top: 30px;
   height: 19px;
 }
 
-.navbar {
+.navigation-bar {
   display: flex;
   gap: 68px;
 }
 
-.navbar a {
+.navigation-bar a {
   height: 35px;
   box-sizing: border-box;
   display: flex;
@@ -171,7 +172,7 @@ body {
   justify-content: end;
 }
 
-.navbar a:hover {
+.navigation-bar a:hover {
   color: var(--main-color);
   border-top: 2px solid  var(--main-color);
 }
@@ -180,45 +181,45 @@ body {
 
 /*----- head ------------------*/
 
-.headline {
+.search-city .headline {
   margin-top: 30px;
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 
-.headline .subtitle {
+.search-city .headline .subtitle {
   margin: 0;
 }
 
 /*----- City ------------------*/
 
-.searchbar {
+.search-city .searchbar {
   margin-top: 35px;
   display: flex;
   align-items: center;
 }
 
-.searchbar .icon {
+.search-city .searchbar .icon {
   padding: 15px 18px;
   background-color: var(--main-bg-color);
   border: 1px solid var(--main-bg-color);
   border-radius: 15px 0 0 15px;
 }
 
-.searchbar .icon i {
+.search-city .searchbar .icon i {
   color: black;
 }
 
-.searchbar .field,
-.searchbar .button {
+.search-city .searchbar .field,
+.search-city .searchbar .button {
   height: 49px;
   font-size: 1.125rem;
   font-weight: 700;
   box-sizing: content-box;
 }
 
-.searchbar .field {
+.search-city .searchbar .field {
   padding: 0 24px;  
   background-color: white;
   border-top: 1px solid var(--main-bg-color);
@@ -227,7 +228,7 @@ body {
   border-left: none;
 }
 
-.searchbar .button {
+.search-city .searchbar .button {
   padding: 0 16px;
   color: white;
   background-color: var(--main-color);
@@ -237,7 +238,7 @@ body {
 
 /*----- Filter ----------------*/
 
-.filterbar {
+.search-city .filterbar {
   margin-top: 35px;
   display: flex;
   align-items: center;
@@ -245,7 +246,7 @@ body {
   flex-wrap: wrap;
 }
 
-.filterbar .button {
+.search-city .filterbar .button {
   height: 50px;
   padding: 0 19px;
   font-size: 1.0625em;
@@ -258,13 +259,13 @@ body {
   border-radius: 25px;
 }
 
-.filterbar .button:hover {
+.search-city .filterbar .button:hover {
   background-color: var(--filter-bg-color);
 }
 
 /*----- Info ------------------*/
 
-.infobar {
+.search-city .infobar {
   margin-top: 35px;
   height: 24px;
   display: flex;
@@ -272,7 +273,7 @@ body {
   gap: 10px;
 }
 
-.infobar .fa-circle {
+.search-city .infobar .fa-circle {
   color: var(--second-bg-color);
 }
 
@@ -323,11 +324,11 @@ body {
 
 /*----- More ------------------*/
 
-.hebergements-more {
+.hebergements-showmore {
   margin-top: 30px;
 }
 
-.hebergements-more a {
+.hebergements-showmore a {
   font-size: 1.125em;
   font-weight: 700;
 }
@@ -363,24 +364,25 @@ body {
 
 /****** Footer *****************/
 
-.footer-helper {
+.footer-links {
   margin-top: 35px;
   display: flex;
   background-color: var(--main-bg-color);
 }
 
-.footer-helper .theme {
+.footer-links .helper-theme {
   flex: 1;
   margin: 20px;
 }
 
-.footer-helper .theme ul {
-  padding: 0;
+.footer-links .helper-theme ul {
+  margin: 0;
+  padding-left: 0;
   list-style-type: none;
 }
 
-.footer-helper .theme li {
-  margin-top: 15px;
+.footer-links .helper-theme li {
+  padding-top: 15px;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */

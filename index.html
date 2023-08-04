@@ -17,17 +17,15 @@
 
 <body>
     <div class="main-container">
-        <header>
-            <div class="topnav">
-                <img src="images/logo/Booki@3x.png" alt="Logo bleu Booki">
-                <nav class="navbar">
-                    <div><a href="#hebergements" class="std-button">Hébergements</a></div>
-                    <div><a href="#activites" class="std-button">Activités</a></div>
-                </nav>
-            </div>
+        <header class="header-navigation">
+            <img src="./images/logo/Booki@3x.png" alt="Logo bleu Booki">
+            <nav class="navigation-bar">
+                <a href="#hebergements">Hébergements</a>
+                <a href="#activites">Activités</a>
+            </nav>
         </header>
         <main>
-            <section>
+            <section class="search-city">
                 <div class="headline">
                     <h1 class="section-title">Trouvez votre hébergement pour des vacances de rêve</h1>
                     <p class="subtitle">En plein centre-ville ou en pleine nature</p>
@@ -112,7 +110,7 @@
                         </article>
                         <article class="card clickable-card">
                             <a href="#">
-                                <img src="./images/hebergements/reisetopia.jpg" alt="Chambre avec lit double et grand dressing">
+                                <img src="./images/hebergements/reisetopia.jpg" alt="Chambre avec lits jumeaux et dressing">
                                 <div class="card-content">
                                     <div class="card-txt">
                                         <h3 class="card-title">Hôtel Les mouettes</h3>
@@ -131,7 +129,7 @@
                         </article>
                         <article class="card clickable-card">
                             <a href="#">
-                                <img src="./images/hebergements/annie-spratt.jpg" alt="Chambre à lit double au style provencal et aux tons bleu">
+                                <img src="./images/hebergements/annie-spratt.jpg" alt="Chambre à lit double au style provencal bleu">
                                 <div class="card-content">
                                     <div class="card-txt">
                                         <h3 class="card-title">Hôtel de la mer</h3>
@@ -169,7 +167,7 @@
                         </article>
                         <article class="card clickable-card">
                             <a href="#">
-                                <img src="./images/hebergements/nicate-lee.jpg" alt="Dortoir avec lits superposés avec rideaux individuels">
+                                <img src="./images/hebergements/nicate-lee.jpg" alt="Dortoir à lits superposés et rideaux individuels">
                                 <div class="card-content">
                                     <div class="card-txt">
                                         <h3 class="card-title">Auberge Le Panier</h3>
@@ -187,8 +185,8 @@
                             </a>
                         </article>
                     </div>
-                    <div class="hebergements-more">
-                        <a href="#" class="std-button">Afficher plus</a>
+                    <div class="hebergements-showmore">
+                        <a href="#">Afficher plus</a>
                     </div>
                 </section> <!-- hebergements -->
                 <section class="populaires">
@@ -250,7 +248,7 @@
                         </article>
                     </div>
                 </section> <!-- populaires -->
-            </div> <!-- hebergements-populaires -->
+            </div> <!-- hebergements-and-populaires -->
             <section id="activites" class="activites">
                 <h2 class="section-title">
                     Activités à Marseille
@@ -258,55 +256,53 @@
                 <div class="activites-cards">
                     <article class="card clickable-card">
                         <a href="#">
-                            <img src="images/activites/reno-laithienne.jpg" alt="Nombreux bateaux amarrés sur les quais du Vieux-Port">
+                            <img src="./images/activites/reno-laithienne.jpg" alt="Nombreux bateaux amarrés aux quais du Vieux-Port">
                             <h3 class="card-title">Vieux-Port</h3>
                         </a>
                     </article>
                     <article class="card clickable-card">
                         <a href="#">
-                            <img src="images/activites/paul-hermann.jpg" alt="Le Fort de Pomègues au sommet d'une île de l'archipel du Frioul">
+                            <img src="./images/activites/paul-hermann.jpg" alt="Le Fort de Pomègues dominant une île du Frioul">
                             <h3 class="card-title">Fort de Pomègues</h3>
                         </a>
                     </article>
                     <article class="card clickable-card">
                         <a href="#">
-                            <img src="images/activites//kilyan-sockalingum.jpg" alt="Vue sur la Méditerrannée depuis les hauteurs du Parc national des Calanques">
+                            <img src="./images/activites//kilyan-sockalingum.jpg" alt="Vue du Parc national des Calanques en bord de Méditerrannée">
                             <h3 class="card-title">Parc national des Calanques</h3>
                         </a>
                     </article>
                     <article class="card clickable-card">
                         <a href="#">
-                            <img src="images/activites/florian-wehde.jpg" alt="Notre-Dame-de-la-Garde surplombant la vielle vile de Marseille">
+                            <img src="./images/activites/florian-wehde.jpg" alt="Basilique Notre-Dame-de-la-Garde surplombant la vielle ville">
                             <h3 class="card-title">Notre-Dame-de-la-Garde</h3>
                         </a>
                     </article>
                 </div>
             </section> <!-- activites -->
         </main>
-        <footer>
-            <div class="footer-helper">
-                <div class="theme">
-                    <p class="list-title">À propos</p>
-                    <ul class="list-buttons">
-                        <li><a href="#">Fonctionnement du site</a></li>
-                        <li><a href="#">Conditions générales</a></li>
-                        <li><a href="#">Données et confidentialité</a></li>
-                    </ul>
-                </div>
-                <div class="theme">
-                    <p class="list-title">Nos hébergements</p>
-                    <ul class="list-buttons">
-                        <li><a href="#">Charte qualité</a></li>
-                        <li><a href="#">Proposer votre hôtel</a></li>
-                    </ul>
-                </div>
-                <div class="theme">
-                    <p class="list-title">Assistance</p>
-                    <ul class="list-buttons">
-                        <li><a href="#">Centre d’aide</a></li>
-                        <li><a href="#">Nous contacter</a></li>
-                    </ul>
-                </div>
+        <footer class="footer-links">
+            <div class="helper-theme">
+                <p class="list-title">À propos</p>
+                <ul class="button-list">
+                    <li><a href="#">Fonctionnement du site</a></li>
+                    <li><a href="#">Conditions générales</a></li>
+                    <li><a href="#">Données et confidentialité</a></li>
+                </ul>
+            </div>
+            <div class="helper-theme">
+                <p class="list-title">Nos hébergements</p>
+                <ul class="button-list">
+                    <li><a href="#">Charte qualité</a></li>
+                    <li><a href="#">Proposer votre hôtel</a></li>
+                </ul>
+            </div>
+            <div class="helper-theme">
+                <p class="list-title">Assistance</p>
+                <ul class="button-list">
+                    <li><a href="#">Centre d’aide</a></li>
+                    <li><a href="#">Nous contacter</a></li>
+                </ul>
             </div>
         </footer>
     </div>
