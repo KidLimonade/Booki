@@ -84,7 +84,7 @@ body {
 
 .populaires-cards .card {
   display: flex;
-  margin-top: 30px;           /* CG: pour cohérence Figma */
+  margin-top: 30px; /* Modified from 33px to 30px */
 }
 
 .populaires-cards img {
@@ -120,6 +120,11 @@ body {
 
 /****** General ****************/
 
+/*
+  Modifications according to Figma mockup
+  To be verified with Sarah and Loïc
+*/
+
 :root {
   --second-bg-color: #D9D9D9;
 }
@@ -128,13 +133,28 @@ body {
   font-weight: 600;
 }
 
+/* Modified in original source code 
+.populaires-cards .card {
+  margin-top: 30px; 
+}
+*/
+
+/*
+  General modifications
+*/
+
 .main-container {
   min-width: 1025px;
 }
 
+/*
+  Common
+*/
+
+.navigation-bar a,
 .clickable-card a,
-.list-buttons a,
-.std-button {
+.showmore-button a,
+.button-list a {
   color: black;
   text-decoration: none;
 }
@@ -147,23 +167,23 @@ body {
 
 /****** header *****************/
 
-.topnav {
+.header-navigation {
   height: 79px;
   display: flex;
   justify-content: space-between;
 }
 
-.topnav img {
+.header-navigation img {
   margin-top: 30px;
   height: 19px;
 }
 
-.navbar {
+.navigation-bar {
   display: flex;
   gap: 68px;
 }
 
-.navbar a {
+.navigation-bar a {
   height: 35px;
   box-sizing: border-box;
   display: flex;
@@ -171,7 +191,7 @@ body {
   justify-content: end;
 }
 
-.navbar a:hover {
+.navigation-bar a:hover {
   color: var(--main-color);
   border-top: 2px solid  var(--main-color);
 }
@@ -180,7 +200,7 @@ body {
 
 /*----- head ------------------*/
 
-.headline {
+.search-city .headline {
   margin-top: 30px;
   display: flex;
   flex-direction: column;
@@ -193,7 +213,7 @@ body {
 
 /*----- City ------------------*/
 
-.searchbar {
+.search-city .searchbar {
   margin-top: 35px;
   display: flex;
   align-items: center;
@@ -237,7 +257,7 @@ body {
 
 /*----- Filter ----------------*/
 
-.filterbar {
+.search-city .filterbar {
   margin-top: 35px;
   display: flex;
   align-items: center;
@@ -250,10 +270,10 @@ body {
   padding: 0 19px;
   font-size: 1.0625em;
   font-weight: 700;
+  white-space: nowrap;
   display: flex;
   align-items: center;
   gap: 10px;
-  white-space: nowrap;
   border: 2px solid  var(--second-bg-color);
   border-radius: 25px;
 }
@@ -264,7 +284,7 @@ body {
 
 /*----- Info ------------------*/
 
-.infobar {
+.search-city .infobar {
   margin-top: 35px;
   height: 24px;
   display: flex;
@@ -323,11 +343,11 @@ body {
 
 /*----- More ------------------*/
 
-.hebergements-more {
+.showmore-button {
   margin-top: 30px;
 }
 
-.hebergements-more a {
+.showmore-button a {
   font-size: 1.125em;
   font-weight: 700;
 }
@@ -363,24 +383,25 @@ body {
 
 /****** Footer *****************/
 
-.footer-helper {
+.footer-links {
   margin-top: 35px;
   display: flex;
   background-color: var(--main-bg-color);
 }
 
-.footer-helper .theme {
+.footer-links .helper-theme {
   flex: 1;
   margin: 20px;
 }
 
-.footer-helper .theme ul {
-  padding: 0;
+.footer-links .helper-theme ul {
+  margin: 0;
+  padding-left: 0;
   list-style-type: none;
 }
 
-.footer-helper .theme li {
-  margin-top: 15px;
+.footer-links .helper-theme li {
+  padding-top: 15px;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
