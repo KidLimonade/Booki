@@ -179,16 +179,15 @@ body {
 }
 
 .navigation-bar {
+  height: 35px;
   display: flex;
   gap: 68px;
 }
 
 .navigation-bar a {
-  height: 35px;
   display: flex;
   flex-direction: column;
   justify-content: end;
-  box-sizing: border-box;
 }
 
 .navigation-bar a:hover {
@@ -323,7 +322,8 @@ body {
 }
 
 .hebergements-cards .card-content {
-  margin: 4px 15px; 
+  margin: 4px 15px;
+  box-sizing: border-box;
 }
 
 .hebergements-cards .card-title {
@@ -356,16 +356,17 @@ body {
 .activites {
   margin-top: 35px;
   padding: 30px;
+  box-sizing: border-box;
 }
 
 .activites-cards {
-  margin-top: 30px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 30px;
 }
 
 .activites-cards .card {
+  margin-top: 30px;
   padding: 0;
 }
 
