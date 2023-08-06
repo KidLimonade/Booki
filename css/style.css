@@ -179,13 +179,12 @@ body {
 }
 
 .navigation-bar {
+  height: 35px;
   display: flex;
   gap: 68px;
 }
 
 .navigation-bar a {
-  height: 35px;
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -209,12 +208,14 @@ body {
 
 .headline .subtitle {
   margin: 0;
+  font-size: 1em;
 }
 
 /*----- City ------------------*/
 
 .search-city .searchbar {
   margin-top: 35px;
+  height: 49px;
   display: flex;
   align-items: center;
 }
@@ -232,10 +233,9 @@ body {
 
 .searchbar .field,
 .searchbar .button {
-  height: 49px;
+  height: 100%;
   font-size: 1.125rem;
   font-weight: 700;
-  box-sizing: content-box;
 }
 
 .searchbar .field {
@@ -253,12 +253,14 @@ body {
   background-color: var(--main-color);
   border: 1px solid var(--main-color);
   border-radius: 0 15px 15px 0;
+  box-sizing: content-box;
 }
 
 /*----- Filter ----------------*/
 
 .search-city .filterbar {
   margin-top: 35px;
+  height: 50px;
   display: flex;
   align-items: center;
   gap: 15px;
@@ -266,7 +268,7 @@ body {
 }
 
 .filterbar .button {
-  height: 50px;
+  height: 100%;
   padding: 0 19px;
   font-size: 1.0625em;
   font-weight: 700;
@@ -276,6 +278,7 @@ body {
   gap: 10px;
   border: 2px solid  var(--second-bg-color);
   border-radius: 25px;
+  box-sizing: border-box;
 }
 
 .filterbar .button:hover {
@@ -324,7 +327,8 @@ body {
 }
 
 .hebergements-cards .card-content {
-  margin: 4px 15px; 
+  margin: 4px 15px;
+  box-sizing: border-box;
 }
 
 .hebergements-cards .card-title {
@@ -357,16 +361,17 @@ body {
 .activites {
   margin-top: 35px;
   padding: 30px;
+  box-sizing: border-box;
 }
 
 .activites-cards {
-  margin-top: 30px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 30px;
 }
 
 .activites-cards .card {
+  margin-top: 30px;
   padding: 0;
 }
 
