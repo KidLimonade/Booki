@@ -122,32 +122,23 @@ body {
 
 /****** General ****************/
 
-/*
-  Modifications according to Figma mockup
-  To be verified with Sarah and Loïc
-*/
-
-:root {
-
-}
-
 /* Modified in original source code
+
 :root {
   --second-bg-color: #D9D9D9;
 }
+
 .main-container {
   min-width: 1025px;
 }
+
 .hebergements .euro {
   font-weight: 600;
 }
+
 .populaires-cards .card {
   margin-top: 30px; 
 }
-*/
-
-/*
-  Common
 */
 
 .navigation-bar a,
