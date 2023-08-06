@@ -316,8 +316,11 @@ body {
 }
 
 .hebergements-cards .card {
-  margin-top: 30px;
   width: 30%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin-top: 30px;
 }
 
 .hebergements-cards img {
@@ -327,22 +330,26 @@ body {
 }
 
 .hebergements-cards .card-content {
-  margin: 4px 15px;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
   box-sizing: border-box;
 }
 
 .hebergements-cards .card-title {
-  margin: 0;
+  margin-top: 4px;
+  margin-bottom: 8px;
 }
 
 .hebergements-cards .card-subtitle {
-  margin: 8px 0 0 0;
+  margin: 0;
   font-size: 0.875em;
   font-weight: 400;
 }
 
 .hebergements-cards .card-rating {
   margin-top: 8px;
+  margin-bottom: 5px;
 }
 
 /*----- More ------------------*/
@@ -382,7 +389,8 @@ body {
 }
 
 .activites-cards .card-title {
-  margin: 20px 19px;
+  margin: 0;
+  padding: 20px 19px;
 }
 
 /****** Footer *****************/
