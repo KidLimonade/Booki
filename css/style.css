@@ -260,6 +260,7 @@ body {
 
 .search-city .filterbar {
   margin-top: 35px;
+  height: 50px;
   display: flex;
   align-items: center;
   gap: 15px;
@@ -267,7 +268,7 @@ body {
 }
 
 .filterbar .button {
-  height: 50px;
+  height: 100%;
   padding: 0 19px;
   font-size: 1.0625em;
   font-weight: 700;
@@ -277,6 +278,7 @@ body {
   gap: 10px;
   border: 2px solid  var(--second-bg-color);
   border-radius: 25px;
+  box-sizing: border-box;
 }
 
 .filterbar .button:hover {
