@@ -382,7 +382,8 @@ body {
 }
 
 .activites-cards .card-title {
-  margin: 20px 19px;
+  margin: 0;
+  padding: 20px 19px;
 }
 
 /****** Footer *****************/
