@@ -7,6 +7,7 @@
   --main-color: #0065FC;
   --main-bg-color: #F2F2F2;
   --filter-bg-color: #DEEBFF;
+  --second-bg-color: #D9D9D9; /* CG: added according Figma */
 }
 
 .fa-solid {
@@ -20,6 +21,7 @@ body {
 
 .main-container {
   width: 100%;
+  min-width: 1025px; /* CG: added minimum width */
   max-width: 1440px;
   padding: 0 50px;
   box-sizing: border-box;
@@ -46,7 +48,7 @@ body {
 }
 
 .euro {
-  font-weight: 700;
+  font-weight: 600; /* CG: modified from 700 to 600 */
 }
 
 .neutral-star {
@@ -84,7 +86,7 @@ body {
 
 .populaires-cards .card {
   display: flex;
-  margin-top: 30px; /* Modified from 33px to 30px */
+  margin-top: 30px; /* CG: modified from 33px to 30px */
 }
 
 .populaires-cards img {
@@ -120,35 +122,23 @@ body {
 
 /****** General ****************/
 
-/*
-  Modifications according to Figma mockup
-  To be verified with Sarah and Loïc
-*/
+/* Modified in original source code
 
 :root {
   --second-bg-color: #D9D9D9;
+}
+
+.main-container {
+  min-width: 1025px;
 }
 
 .hebergements .euro {
   font-weight: 600;
 }
 
-/* Modified in original source code 
 .populaires-cards .card {
   margin-top: 30px; 
 }
-*/
-
-/*
-  General modifications
-*/
-
-.main-container {
-  min-width: 1025px;
-}
-
-/*
-  Common
 */
 
 .navigation-bar a,
@@ -316,11 +306,11 @@ body {
 }
 
 .hebergements-cards .card {
+  margin-top: 30px;
   width: 30%;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  margin-top: 30px;
 }
 
 .hebergements-cards img {
@@ -380,6 +370,9 @@ body {
 .activites-cards .card {
   margin-top: 30px;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
 }
 
 .activites-cards img {
@@ -388,9 +381,15 @@ body {
   border-radius: 20px 20px 0 0;     
 }
 
+.activites-cards .card-content {
+  padding: 0 19px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
 .activites-cards .card-title {
-  margin: 0;
-  padding: 20px 19px;
+  margin: 20px 0;
 }
 
 /****** Footer *****************/
