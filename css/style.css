@@ -120,25 +120,12 @@ body {
 
 /* Ajouts Christian Georgeot */
 
-/****** General ****************/
-
 /* Modified in original source code
 
-:root {
-  --second-bg-color: #D9D9D9;
-}
-
-.main-container {
-  min-width: 1025px;
-}
-
-.hebergements .euro {
-  font-weight: 600;
-}
-
-.populaires-cards .card {
-  margin-top: 30px; 
-}
+:root {  --second-bg-color: #D9D9D9; }
+.main-container { min-width: 1025px; }
+.hebergements .euro { font-weight: 600; }
+.populaires-cards .card { margin-top: 30px; }
 */
 
 .navigation-bar a,
@@ -217,10 +204,6 @@ body {
   font-weight: 700;
 }
 
-.searchbar .icon i {
-  color: black;
-}
-
 .searchbar .icon {
   width: 50px;
   display:flex;
@@ -229,6 +212,10 @@ body {
   background-color: var(--main-bg-color);
   border: 1px solid var(--main-bg-color);
   border-radius: 15px 0 0 15px;
+}
+
+.searchbar .icon i {
+  color: black;
 }
 
 .searchbar .field {
